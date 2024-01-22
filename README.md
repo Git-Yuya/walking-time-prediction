@@ -1,8 +1,9 @@
 # 連合学習を用いた歩行時間予測モデルの評価
 
 ## 歩行時間予測モデル
-- 説明変数：width, speed, crowd_level_2, crowd_level_3, crowd_level_4, crowd_level_5
-- 目的変数：
+- 説明変数：歩道の幅 [m], 通常時の歩行速度 [m/s], 混雑度  
+  width, speed, crowd_level_2, crowd_level_3, crowd_level_4, crowd_level_5
+- 目的変数：1mあたりの歩行時間の実測値と理論値との誤差 [s/m]  
 $\frac{1}{\text{distance}} \left( \text{time} - \frac{\text{distance}}{\text{speed}} \right) = \frac{\text{time}}{\text{distance}} - \frac{1}{\text{speed}}$
 
 ## 連合学習の評価結果
