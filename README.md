@@ -7,7 +7,7 @@
 $\frac{1}{\text{distance}} \left( \text{time} - \frac{\text{distance}}{\text{speed}} \right) = \frac{\text{time}}{\text{distance}} - \frac{1}{\text{speed}}$
 
 ## 連合学習の評価結果
-1m歩いた時の平均時間誤差 (MAE) [s/m]
+1m歩いた時の歩行時間の平均絶対誤差 (MAE) [s/m]
 
 - ランダムに分割
 
