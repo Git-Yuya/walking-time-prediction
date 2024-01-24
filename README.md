@@ -41,7 +41,7 @@ $\frac{1}{\text{distance}} \left( \text{time} - \frac{\text{distance}}{\text{spe
   <img src="https://img.shields.io/badge/-Colab-F9AB00.svg?logo=google%20colab&style=plastic">
 
 ## 各ファイルの説明
-- federated_learning.ipynb：連合学習で構築した歩行時間予測モデルを評価
+- federated_learning.ipynb：連合学習を用いて歩行時間予測モデルを構築
 - linear_regression.ipynb：2つの歩行時間予測モデルを評価
 - multi_agent_simulation.ipynb：歩行者マルチエージェントシミュレーションから学習データセットを作成
-- dataset.csv：multi_agent_simulation.ipynbで作成したデータセット
+- dataset.csv：multi_agent_simulation.ipynbで作成した学習データセット
