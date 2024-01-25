@@ -1,5 +1,11 @@
 # 連合学習を用いた歩行時間予測モデルの評価
 
+## データセットの特徴量
+- distance：進んだ距離
+- width：歩道の幅 (1.0, 1.5, 2.0, 2.5, 3.0 m)
+- speed：通常時の歩行速度 (0.8, 0.9, $\ldots$ , 1.7 m/s)
+- crowd_level：混雑度 ("1", "2", "3", "4", "5")
+
 ## 歩行時間予測モデル
 - 説明変数：歩道の幅 [m], 通常時の歩行速度 [m/s], 混雑度  
   width, speed, crowd_level_2, crowd_level_3, crowd_level_4, crowd_level_5
