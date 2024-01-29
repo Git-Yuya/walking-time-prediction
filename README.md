@@ -41,6 +41,9 @@ $\frac{1}{\text{distance}} \left( \text{time} - \frac{\text{distance}}{\text{spe
 ## 実装
 - 言語：
   <img src="https://img.shields.io/badge/-Python-3776AB.svg?logo=python&style=plastic">
+- 機械学習ライブラリ：
+  <img src="https://img.shields.io/badge/-PyTorch-EE4C2C.svg?logo=pytorch&style=plastic">
+  <img src="https://img.shields.io/badge/-scikit%E2%80%90learn-F7931E.svg?logo=scikitlearn&style=plastic">
 - 連合学習フレームワーク：
   <img src="https://flower.dev/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fflower_white_border.c2012e70.png&w=640&q=75" width="18px" alt="Flower Website">
   <img src="https://img.shields.io/badge/-Flower-F2B705.svg?logo=&style=plastic">
