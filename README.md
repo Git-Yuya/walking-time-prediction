@@ -10,16 +10,18 @@
 - 従来の1箇所に集約する機械学習と連合学習の予測精度の比較評価
 
 ## データセットの特徴量
-- distance：進んだ距離
+- distance：進んだ距離 [m]
 - width：歩道の幅 (1.0, 1.5, 2.0, 2.5, 3.0 m)
 - speed：通常時の歩行速度 (0.8, 0.9, $\ldots$ , 1.7 m/s)
 - crowd_level：混雑度 ("1", "2", "3", "4", "5")
+- time：歩行時間 [s]
 
 ## 歩行時間予測モデル
 - 説明変数：歩道の幅 [m], 通常時の歩行速度 [m/s], 混雑度  
   width, speed, crowd_level_2, crowd_level_3, crowd_level_4, crowd_level_5
 - 目的変数：1mあたりの歩行時間の実測値と理論値との誤差 [s/m]  
 $\frac{1}{\text{distance}} \left( \text{time} - \frac{\text{distance}}{\text{speed}} \right) = \frac{\text{time}}{\text{distance}} - \frac{1}{\text{speed}}$
+- 前処理：
 
 ## 連合学習の評価
 　データセットを訓練データ:テストデータ=7:3でランダムに分割する。評価指標は、1mあたりの歩行時間 [s/m]の平均絶対誤差 (Mean Absolute Error; MAE)を使用し、テストデータ全体と混雑度別に分けたテストデータで評価する。
