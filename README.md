@@ -26,8 +26,12 @@ $\frac{1}{\text{distance}} \left( \text{time} - \frac{\text{distance}}{\text{spe
 
 **例題)** 混雑度3、歩道の道幅1.5m、距離120mの歩道を通常時の歩行速度1.2m/sの人が歩く場合にかかる予測時間は？  
 歩行時間予測モデルの出力までの流れは以下の通り。
-![model](https://github.com/Git-Yuya/walking-time-prediction/assets/84259422/110b87c4-5660-44f0-b22c-79b82ed97889)
-$\hspace{20pt} (1/1.2 + 0.0518) \times 120 = 106.216$ s
+
+<img src="https://github.com/Git-Yuya/walking-time-prediction/assets/84259422/110b87c4-5660-44f0-b22c-79b82ed97889" alt="歩行時間予測モデルの出力までの流れ" width="350">
+
+以下の式より、120m歩くのに106.216秒かかると予測できる。ただし、1/1.2は歩行速度の逆数であり、1mあたりに何秒かかるかの理論値を表している。また、0.0518は歩行時間予測モデルの出力であり、1mあたりの実測値と理論値との誤差を表している。
+$$(1/1.2 + 0.0518) \times 120 = 106.216$$ 
+
 
 
 
