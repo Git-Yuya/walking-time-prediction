@@ -17,11 +17,19 @@
 - time：歩行時間 [s]
 
 ## 歩行時間予測モデル
-前処理でOne-Hot Encodingと標準化を行う。
+- 機械学習モデル：線形回帰
+- 前処理：One-Hot Encoding, 標準化
 - 説明変数：歩道の幅 [m], 通常時の歩行速度 [m/s], 混雑度  
   width, speed, crowd_level_2, crowd_level_3, crowd_level_4, crowd_level_5
 - 目的変数：1mあたりの歩行時間の実測値と理論値との誤差 [s/m]  
 $\frac{1}{\text{distance}} \left( \text{time} - \frac{\text{distance}}{\text{speed}} \right) = \frac{\text{time}}{\text{distance}} - \frac{1}{\text{speed}}$
+
+**例題)** 混雑度3、歩道の道幅1.5m、距離120mの歩道を通常時の歩行速度1.2m/sの人が歩く場合にかかる予測時間は？  
+歩行時間予測モデルの出力までの流れは以下の通り。
+![model](https://github.com/Git-Yuya/walking-time-prediction/assets/84259422/110b87c4-5660-44f0-b22c-79b82ed97889)
+$\hspace{20pt} (1/1.2 + 0.0518) \times 120 = 106.216$ s
+
+
 
 ## 連合学習の評価
 　データセットを訓練データ:テストデータ=7:3でランダムに分割する。評価指標は、1mあたりの歩行時間 [s/m]の平均絶対誤差 (Mean Absolute Error; MAE)を使用し、テストデータ全体と混雑度別に分けたテストデータで評価する。
